@@ -23,7 +23,21 @@
 
 <style>
 
-
+input[type="date"]::before {
+	color: #999999;
+	content: attr(placeholder);
+}
+input[type="date"] {
+	color: #ffffff;
+}
+input[type="date"]:focus,
+input[type="date"]:valid {
+	color: #666666;
+}
+input[type="date"]:focus::before,
+input[type="date"]:valid::before {
+	content: "" !important;
+}
 
 .navbar {
   max-height:70px 
@@ -787,8 +801,8 @@ label.ratestars:before {
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="inputDate"><strong>Event Date</strong></label>
-      <input type="date"  class="form-control" placeholder="Pick date.." class = "textbox-n" type = "text" onfocus = "(this.type = 'date')"  id = "date">
-    </div>
+<input type="date" class="form-control" placeholder="Pick date..." required>
+	  </div>
 </div>
 
 
