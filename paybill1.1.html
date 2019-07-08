@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <!-- Required meta tags -->
+    <meta charset="utf-8">
+<!--     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:200,300,400,500,600,700" rel="stylesheet">
+    <meta name="theme-color" content="#00618D">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style type="text/css">      
+    	.jumbotronfirst{
+        padding-bottom: 2px;
+        padding-top: 2px;
+        background-color: white;
+      }
+       #fontbar1{
+       font-size: 15px;
+       padding-top: 15px;
+      }
+        .noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+       #WMLogo{
+        margin-left: 10px;
+        margin-top: 12px;
+      }
+      body{
+      	background-color: #eeeeee;
+        font-family: lato;
+        }
+   .BSES{
+        margin-left: -30px;
+      }
+   #BSES{
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+         }
+
+         .      .btn-primary, .btn-outline-primary:hover, .btn-outline-primary:active, .btn-outline-primary:visited .buttoncolor .btn-outline-primary{
+    background-color: #D62E26;
+      }
+
+
+
+  .paybillbanner{
+    background-color: white;
+
+  }
+  .fontss{
+    font-size: 16px;
+  }
+  ::placeholder{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+  }
+/*  .cent{
+    text-align: center;
+  }*/
+  .fa-receipt{
+    color: #E83E07;
+  }
+  .ups{
+    margin-top: -20px;
+  }
+
+  .cen{
+    align-content: center;
+    text-align: center;
+  }
+
+    </style>
+
+
+	<title>Pay Bill</title>
+</head>
+<body>
+  <div class="noselect">
+
+	<!-- First Jumbotron -->
+  <div class="cen">
+
+
+
+    <div class="jumbotron jumbotron-fluid jumbotronfirst border-bottom">
+      <a href="https://wondermail.github.io/DOMINOS/"><img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/c27b1b36-d2e2-4bb6-bb89-80a732e5e6ba.png" width="70px" align="left" id="WMLogo" style="margin-top: 20px;"></a>
+      <p align="left"; id="fontbar1"><span style="color: black; margin-left: 50px;"> Verify Your Details</span></p>
+    </div>
+
+    <!-- Pay Your Bills Online -->
+
+    <div class="jumbotron jumbotron-fluid paybillbanner fontss ups border-bottom">
+      <h4 style="padding-left: 10px; margin-top: -10px; color: #056DB6; font-weight: 700" class="cent">Pay Your Bill Online</h4>
+      <label  style="max-width: 50%; margin-left: 10px; margin-top: 20px;">Name</label>
+      <input class="form-control" style="max-width: 50%; /*margin-left: 10px;*/ margin: auto; margin-top: 0px;" type="text" placeholder="Rajesh Rathod" readonly>
+
+      <!-- CA Number -->
+<!--       <label  style="max-width: 50%; margin-left: 10px; margin-top: 10px;">Customer ID</label>
+      <input class="form-control" style="max-width: 50%; /*margin-left: 10px;*/ margin: auto; margin-top: 0px;" type="text" placeholder="150865XXX" readonly> -->
+
+
+      <!-- Amount To Be Paid -->
+      <label  style="max-width: 50%; margin-left: 10px; margin-top: 10px;">Amount To Be Paid</label>
+      <input class="form-control" style="max-width: 50%; /*margin-left: 10px;*/ margin: auto; margin-top: 0px;" type="text" placeholder="₹ 601.80" readonly>
+
+      <!-- Due Date -->
+<!--       <label  style="max-width: 50%; margin-left: 10px; margin-top: 10px;">Due Date</label>
+      <input class="form-control" style="max-width: 50%; /*margin-left: 10px;*/ margin: auto; margin-top: 0px;" type="text" placeholder="24.05.2019" readonly> -->
+
+      <!-- Pay Button -->
+
+      <a class="btn btn-warning" href="paybill.html" role="button" style="max-width: 50%; margin-left: 10px; margin-top: 20px;">Pay Now</a>
+      <button type="button" class="btn btn-outline-dark" onclick="goBack()" style="max-width: 50%; margin-left: 4px; margin-top: 20px;">Cancel</button>
+    </div>
+
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+    <script>
+function goBack() {
+  window.history.back();
+}
+</script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
